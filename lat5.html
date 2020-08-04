@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>LOOP</title>
+</head>
+<body>
+
+    <div id="app">
+        <ol>
+            <li v-for="(k, index) in kelas" :key="index">{{k}} </li>
+            <!-- <li v-for="(k, index) in kelas" :key="index">{{k}}</li> -->
+            
+        </ol>
+    </div>
+
+    <script>
+         var app = new Vue({  //inisialisasi object Vue Js
+            el: "#app",
+            data: {
+                "kelas" : ["item ke-0 adalah XRPL1","item ke-1 adalah XRPL2","item ke-2 adalah XIRPL1","item ke-3 adalah XIRPL2","item ke-4 adalah XIIRPL1","item ke-5 adalah XIIRPL2"],
+                // "item"  : ["item ke-0","item ke-1","item ke-2","item ke-3","item ke-4","item ke-5"]
+    }
+})
+    </script>
+
+</body>
+</html>
